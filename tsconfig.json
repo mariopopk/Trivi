@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+    "module": "es6",
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+
+    /* Basic Options */
+    "target": "es5",                                /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 
+  
+    
+    /* Advanced Options */
+    "skipLibCheck": true,                           /* Skip type checking of declaration files. */
+    "forceConsistentCasingInFileNames": true,        /* Disallow inconsistently-cased references to the same file. 
+    */
+    "watch": true
+  },
+  "exclude":["node_modules", "**/*.spec.ts"]
+}
