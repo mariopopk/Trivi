@@ -26,25 +26,30 @@ class TriviModel{
         this._questions = questions
     }
 
-
-    selectAnswer(id:number){
-        const {answers: responses} = (this.activeQuestion)
-
-        for(let i =0; i < responses.length; i ++){
-            console.log(responses[i])
-            
-        }
-        
-
+    public get questions(){
+        return this._questions
     }
+
+
+    // selectAnswer(id:number){
+    //     const {answers: responses} = (this.activeQuestion)
+
+    //     for(let i =0; i < responses.length; i ++){
+    //         console.log(responses[i])      
+    //     }
+    // }
 
 
     next(){
-        this._current++
+        if(this._current < this._questions.length - 1)   this._current++
+       
+        
     }
 
     back(){
-        this._current--
+        if(this._current > 0) this._current--
+
+      
     }
 
     initialize(){

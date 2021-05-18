@@ -19,8 +19,23 @@ class Trivi{
 
     start(){
         this.view.initialize(this._attachment, this._prefix)
-        this.view.paint(this.model.current + 1)
+       this.render()
+        this.view.next?.addEventListener("click", (e)=>{
+            e.preventDefault()  
+            this.model.next()
+            this.render()
+        })
     }
+
+    render(){
+        this.view.paint(
+            this.model.current + 1,
+            this.model.questions.length,
+            this.model.activeQuestion.prompt, 
+            this.model.activeQuestion.answers)
+    }
+
+ 
 
 }
 

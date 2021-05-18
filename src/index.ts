@@ -25,7 +25,17 @@ trivi.model.questions = [
             {text: "Around 50-100 chemicals", isCorrect: true, id:7},
             {text: "Less than 49 chemicals", isCorrect: false, id:8} 
         ]
-    }
+    },
+    {
+        id: 3,
+         prompt: "Where has the hottest temperature been recorded?",
+         answers: [
+             {text: "El Azizia, Libya", isCorrect: false, id:9},
+             {text: "Death Valley, United States", isCorrect: true, id:10},
+             {text: "Timbuktu, Mali", isCorrect: false, id:11},
+             {text: "Bangkok, Thailand", isCorrect: false, id:12} 
+         ]
+     }
 ]
 
 
